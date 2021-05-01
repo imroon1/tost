@@ -1,0 +1,11 @@
+<div style="clear:both;">
+<div class="span2 thumbnail product-item">
+<a href="{{ instance.get_absolute_url }}" class="productname producthover"><div style="padding:0px; margin:0px; text-align:center; background-repeat:no-repeat; background-position:-9999px -9999px;"><img src="{{ instance.image.url }}" alt="{{ instance.title }}" style="padding:0px; margin:0px; border:1px solid #DDD;" class="img_mock lazy" data-original="" /><noscript><img src="{{ instance.image.url }}" alt="{{ instance.title }}" style="padding:0px; margin:0px; border:1px solid #DDD;" class="img_mock" /></noscript></div></a>             
+<div class="caption">
+<a href="{{ instance.get_absolute_url }}" class="productname_small"><span>{{ instance.title }}</span></a>               
+<div class="price pull-left">
+ <span class="newprice"></span>
+</div>
+</div>
+</div>
+</div>

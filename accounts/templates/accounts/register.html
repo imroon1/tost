@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+
+
+{% block content %}
+<hr/>
+<div class="container">
+
+	<div class='row'>
+	<div class='col-12 col-md-10'>
+		<center>
+
+			<form method='POST'> {% csrf_token %}
+				<div class="container-fluid" style="background-color:#ffffff" >	
+						{{ form.as_p }}
+					<button type="submit" class="btn btn-primary">Submit</button>
+
+				</div>
+			</form>
+		</center>
+	</div>
+	</div>
+	
+</div>
+{% endblock%}

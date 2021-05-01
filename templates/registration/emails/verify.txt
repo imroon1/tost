@@ -1,0 +1,16 @@
+Hallo,
+
+Silakan aktifkan akunmu dengan user email: {{ email }} dan klik link di bawah ini:
+
+
+
+{{ path }}
+
+
+setelah kamu aktifkan dengan klik link di atas ini, kamu bisa login!
+
+Terima Kasih,
+
+
+
+Taho Printing Kaos Online by CV. Taho Yess!!

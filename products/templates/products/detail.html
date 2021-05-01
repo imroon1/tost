@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+
+  <div class="container">
+
+    <div class="row align-items-center">
+      <div class="col-6 mx-auto col-md-6 order-md-2">
+	  
+			<center>
+			<h3 class="mb-3 bd-text-purple-bright">{{ object.title }}</h3> <br/>
+			<div class="row mx-n2">
+				<div class="col-md px-2">
+				{{ object.timestamp|timesince}} ago
+				{{ object.description|linebreaks }} <br/>
+				</div>
+			</div>
+
+			{% if object.image %}
+				
+				<img name="preview" src="{{ object.image.url}}" class="img-responsive">
+			</center>
+
+			{% endif %}
+		
+		</div>
+		</div>
+
+		<div class='col-sm-12'>
+			{% include 'products/snippets/update-cart.html' with product=object cart=cart %}
+
+		</div>
+
+
+{% endblock %}
+
+
+

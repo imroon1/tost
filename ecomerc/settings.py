@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ')2zd@3$cro2mdyqd$wd^j$*hm3qij1hsacv7edt_ai@s$8(byy'
+SECRET_KEY = 'SECRET_KEY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -68,8 +68,8 @@ LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = 'home'
 
-STRIPE_SECRET_KEY = "sk_test_oUaMQz3zPHNXDq566WMIRLAR"
-STRIPE_PUB_KEY = 'pk_test_IwXUGyFvPIQFjoVEGDCj6bx7'
+STRIPE_SECRET_KEY = "SECRET_KEY"
+STRIPE_PUB_KEY = 'PUB_KEY'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

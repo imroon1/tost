@@ -7,16 +7,16 @@ except:
     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "")
     AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "")
 
-AWS_GROUP_NAME = "CFE_eCommerce_Group"
-AWS_USERNAME = "cfe-ecommerce-user"
+AWS_GROUP_NAME = "eCommerce_Group"
+AWS_USERNAME = "ecommerce-user"
 
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_AUTH = False
 
-DEFAULT_FILE_STORAGE = 'ecommerce.aws.utils.MediaRootS3BotoStorage'
-STATICFILES_STORAGE = 'ecommerce.aws.utils.StaticRootS3BotoStorage'
-AWS_STORAGE_BUCKET_NAME = 'cfe-ecommerce'
+DEFAULT_FILE_STORAGE = 'ecm.aws.utils.MediaRootS3BotoStorage'
+STATICFILES_STORAGE = 'ecm.aws.utils.StaticRootS3BotoStorage'
+AWS_STORAGE_BUCKET_NAME = 'ecommerce'
 S3DIRECT_REGION = 'us-west-2'
 S3_URL = '//%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
 MEDIA_URL = '//%s.s3.amazonaws.com/media/' % AWS_STORAGE_BUCKET_NAME
